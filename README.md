@@ -45,7 +45,19 @@ corresponding files with a `.huff` extension.
 
 Usage
 -----
-
+6 tests are available, namely:
+  * kjv
+  * hello
+  * book2
+  * news
+  * paper1
+  * bigtable
+These are the only arguments accepted, sample usage takes the form of:
+    ./HuffFramework bigtable
+where `bigtable` is one of the provided 6 dataset tests. Note, `bigtable`
+actually generates all the results by running through the `kjv`, `hello`,
+`book2`, `news` and `paper1`. The final results presented are in milliseconds
+(ms) and are the minimum time (the best result) from a sample of 25 runs.
 
 
 License Terms (MIT)
