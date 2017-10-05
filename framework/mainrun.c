@@ -470,9 +470,6 @@ int main(int argc, char *argv[]) {
 
 	if (argc > 1) {
 		testname = argv[1];
-		if (strcmp(argv[1], "hello")) {
-			//parm1 = 1;
-		}
 	} else {
 		testname = "default";
 	}
@@ -483,7 +480,6 @@ int main(int argc, char *argv[]) {
 	onethread = newDecoder(onethreadApproach, NULL, "onethread");
 
 #ifdef OPENCL
-
 	opencl = newDecoder(openclApproach, NULL, "opencl");
 #endif
 #ifdef CUDA
